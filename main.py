@@ -40,13 +40,13 @@ import html2text
 # -------------------------
 
 # Crawl settings
-START_URL = "https://test.naidfitness.com/"       # starting point
+START_URL = "https://example.com/"       # starting point
 THREADS = 4                                       # number of worker threads
 REQUEST_TIMEOUT = 15                              # seconds
-USER_AGENT = "SiteCrawler/1.0 (+https://test.naidfitness.com/)"  # user agent
+USER_AGENT = "SiteCrawler/1.0 (+https://example.com/)"  # user agent
 
 ALLOWLIST_PATH_PREFIXES: List[str] = []          # Empty => all pages allowed
-BLOCKLIST_PATH_PREFIXES: List[str] = ["/admin", "/wp-login.php", "/cart"]
+BLOCKLIST_PATH_PREFIXES: List[str] = ["/admin", "/wp-login.php", "/cart", "/wp-admin"]
 
 OUTPUT_BASE_DIR = "crawls"
 INCLUDE_PATH_IN_FILENAME = True
@@ -59,10 +59,10 @@ DIFF_CONTEXT_LINES = 3
 EMAIL_ENABLED = True                              # set to False to disable email
 SMTP_HOST = "smtp.buyaqsa.com"
 SMTP_PORT = 587
-SMTP_USERNAME = "info@buyaqsa.com"           # replace
-SMTP_PASSWORD = "Infobuy@2024"   # replace (use app password for Gmail)
-EMAIL_FROM = "info@buyaqsa.com"
-EMAIL_TO = ["admin@buyaqsa.com"]              # list of recipients
+SMTP_USERNAME = "email@example.com"           # replace
+SMTP_PASSWORD = "Passward"   # replace (use app password for Gmail)
+EMAIL_FROM = "email@example.com"
+EMAIL_TO = ["newemail@example.com"]              # list of recipients
 EMAIL_SUBJECT_PREFIX = "[SiteCrawler]"
 
 SKIP_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg',
@@ -411,3 +411,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
