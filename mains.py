@@ -35,10 +35,10 @@ import html2text
 # -------------------------
 # CONFIGURATION
 # -------------------------
-START_URL = "https://www.ville.kirkland.qc.ca/"
+START_URL = "https://example.com/"
 THREADS = 4
 REQUEST_TIMEOUT = 20  # seconds
-USER_AGENT = "SiteCrawler/1.0 (+https://www.ville.kirkland.qc.ca/)"
+USER_AGENT = "SiteCrawler/1.0 (+https://example.com/)"
 
 ALLOWLIST_PATH_PREFIXES: List[str] = []
 BLOCKLIST_PATH_PREFIXES: List[str] = ["/admin", "/wp-login.php", "/cart"]
@@ -51,12 +51,12 @@ TRUNCATE_DIFF_LINES = 150
 DIFF_CONTEXT_LINES = 3
 
 EMAIL_ENABLED = True
-SMTP_HOST = "smtp.buyaqsa.com"
+SMTP_HOST = "smtp.example.com"
 SMTP_PORT = 465  # SSL port
-SMTP_USERNAME = "info@buyaqsa.com"
-SMTP_PASSWORD = "Infobuy@2024"
-EMAIL_FROM = "info@buyaqsa.com"
-EMAIL_TO = ["admin@buyaqsa.com"]
+SMTP_USERNAME = "email@example.com"
+SMTP_PASSWORD = "Passeord"
+EMAIL_FROM = "email@example.com"
+EMAIL_TO = ["newemail@example.com"]
 EMAIL_SUBJECT_PREFIX = "[SiteCrawler]"
 
 SKIP_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg',
@@ -380,3 +380,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
