@@ -57,7 +57,7 @@ DIFF_CONTEXT_LINES = 3
 
 # Email settings (SMTP)
 EMAIL_ENABLED = True                              # set to False to disable email
-SMTP_HOST = "smtp.buyaqsa.com"
+SMTP_HOST = "smtp.example.com"
 SMTP_PORT = 587
 SMTP_USERNAME = "email@example.com"           # replace
 SMTP_PASSWORD = "Passward"   # replace (use app password for Gmail)
@@ -411,4 +411,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
